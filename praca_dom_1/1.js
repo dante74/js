@@ -9,7 +9,7 @@ let len = years.length;
 
 for (i=0; i<len;i++)
 {/*
-    if(years[i] %4 == 0 && years[i] %4 != 0)
+    if(years[i] %4 == 0 && years[i] %100 != 0)
     {
         console.log("Rok ", years[i]);
         console.log(" jest rokiem przestępnym" );
@@ -21,7 +21,7 @@ for (i=0; i<len;i++)
         console.log(" jest rokiem przestępnym" );
         
     } */
-    if((years[i] %4 == 0 && years[i] %4 != 0) ||  (years[i] % 400 == 0))  
+    if((years[i] %4 == 0 && years[i] %100 != 0) ||  (years[i] % 400 == 0))  
     {
 
         console.log("Rok ", years[i]);
