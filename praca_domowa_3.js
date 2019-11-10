@@ -70,35 +70,35 @@
 
 
 /************************************************ */
-const tab = [
-    {
-    x: 1,
-    y: ' object one value ',
-    operation: function() {
-        return "object one prefix " + this.x + this.y;
-        }
-    },  
+// const tab = [
+//     {
+//     x: 1,
+//     y: ' object one value ',
+//     operation: function() {
+//         return "object one prefix " + this.x + this.y;
+//         }
+//     },  
 
-    {
-    x: 2,
-    y: ' object two value ',
-    operation: function() {
-        return "object two prefix " + this.x + this.y;
-        }
-    },
+//     {
+//     x: 2,
+//     y: ' object two value ',
+//     operation: function() {
+//         return "object two prefix " + this.x + this.y;
+//         }
+//     },
 
-    {
-    x: 3,
-    y: ' object three value ',
-    operation: function() {
-        return "object three prefix " + this.x + "  "+ this.y;
-        }
-    },
-]
+//     {
+//     x: 3,
+//     y: ' object three value ',
+//     operation: function() {
+//         return "object three prefix " + this.x + "  "+ this.y;
+//         }
+//     },
+// ]
 
 
-for(let i=0; i<tab.length;i++){
-    (i!=tab.length-1) ? 
-    console.log(tab[i].operation.bind(tab[i+1])()) :
-    console.log(tab[i].operation.bind(tab[0])());
-}
+// for(let i=0; i<tab.length;i++){
+//     (i!=tab.length-1) ? 
+//     console.log(tab[i].operation.bind(tab[i+1])()) :
+//     console.log(tab[i].operation.bind(tab[0])());
+// }
