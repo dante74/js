@@ -1,5 +1,5 @@
 // let iife = (function() {
-//     let value;    
+//     let value;
 //     return {
 //             setValue(element){
 //                 this.value = element;
@@ -25,31 +25,30 @@
 // console.log(iife.showValue());
 
 /******************************************************************* */
-// add = (a,b) => a+b;
-// sub = (a,b) => a-b;
-// div = (a,b) => a/b;
-// multi = (a,b) => a*b;
-// const calc = function(){  
-//     return  {
-//         x : 0,
-//         y : 0,
-//         op : '',
-//         setOperation : function(a,b,c){
-//             this.x = a;
-//             this.y = b;
-//             this.op = c;
-//         },
-//         calculate : function () { 
-//             return this.op(this.x,this.y);
-//         }       
+// const add = (a, b) => a + b;
+// const sub = (a, b) => a - b;
+// const div = (a, b) => a / b;
+// const multi = (a, b) => a * b;
+// const calc = function() {
+//   return {
+//     x: 0,
+//     y: 0,
+//     op: "",
+//     setOperation: function(a, b, c) {
+//       this.x = a;
+//       this.y = b;
+//       this.op = c;
+//     },
+//     calculate: function() {
+//       return this.op(this.x, this.y);
 //     }
-// }
+//   };
+// };
 // let calculator = calc();
-// calculator.setOperation(5,10,multi);
+// calculator.setOperation(5, 10, multi);
 // console.log(calculator.calculate());
 
 /**************************************************** */
-
 
 // const summ = function(tab){
 //     BaseObject = {
@@ -63,11 +62,10 @@
 //     for(let obj of tab){
 //         BaseObject.x=(obj.x);
 //         BaseObject.y=(obj.y);
-//         console.log('Suma ' + obj.x + ' i ' + obj.y + ' wynosi ' +  BaseObject.sum());  
+//         console.log('Suma ' + obj.x + ' i ' + obj.y + ' wynosi ' +  BaseObject.sum());
 //     }
 // }
 // summ([{x:2,y:3},{x:-1,y:6},{x:0,y:8}]);
-
 
 /************************************************ */
 // const tab = [
@@ -77,7 +75,7 @@
 //     operation: function() {
 //         return "object one prefix " + this.x + this.y;
 //         }
-//     },  
+//     },
 
 //     {
 //     x: 2,
@@ -96,9 +94,22 @@
 //     },
 // ]
 
-
 // for(let i=0; i<tab.length;i++){
-//     (i!=tab.length-1) ? 
+//     (i!=tab.length-1) ?
 //     console.log(tab[i].operation.bind(tab[i+1])()) :
 //     console.log(tab[i].operation.bind(tab[0])());
 // }
+
+const a = {
+  c: 1,
+  d: 2
+};
+const dd = {
+  g: 8,
+  h: 9
+};
+let d = { ...a, ...dd };
+console.log(d);
+d.c = 5;
+console.log(a);
+console.log(d);
